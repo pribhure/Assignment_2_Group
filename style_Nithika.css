@@ -1,0 +1,470 @@
+/* -----------------------------   HOME   ----------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #8BC34A;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.small-circle-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header-content {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: start;
+}
+
+.header-content h1,
+.header-content h2 {
+    margin: 0;
+}
+
+.header-content h1 {
+    font-size: 24px;
+}
+
+.header-content h2 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #32CD32;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #8BC34A;
+}
+
+.main-section {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    max-width: calc(50% - 40px);
+    height: auto;
+    z-index: 1;
+}
+
+.intro-bg {
+    width: 100%;
+    height: auto;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-content {
+    flex: 1;
+    margin-left: 6%;
+    margin-right: 2%;
+}
+
+.left-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.left-content h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    margin-bottom: 10px;
+}
+
+.left-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.left-content ul li {
+    margin-bottom: 10px;
+}
+
+.left-content ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.left-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.right-content {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.sliding-box {
+    width: 140%;
+    height: 100%;
+    display: flex;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.home-images {
+    display: flex;
+    animation: slide 10s linear infinite;
+    width: 100%;
+}
+
+.home-images img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 5%; 
+}
+
+.book-now-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 34%; 
+    margin-top: 15px; 
+}
+
+.book-now-button .book-now-button {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.opening-hours {
+    margin-left: 30%; 
+    margin-bottom: 20px;
+}
+
+.book-now-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #8BC34A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.footer-links,
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p:last-of-type {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        flex-direction: column; 
+    }
+
+    .text-container {
+        position: relative;
+        margin-top: 20px; 
+        max-width: 100%; 
+        padding: 10px; 
+    }
+
+    .left-content {
+        margin: 0; 
+    }
+
+    .right-content {
+        margin: 0; 
+    }
+
+    .home-images img {
+        margin-right: 0; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .book-now-button,
+    .opening-hours {
+        margin: 0; 
+    }
+
+    .about-content .banner-text {
+        max-width: 100%; 
+    }
+
+    .about-content .banner-text h2 {
+        font-size: 18px; 
+    }
+
+    .about-content .text-section h3 {
+        font-size: 18px; 
+    }
+}
+
+/* -----------------------------   ABOUT US   ----------------------------------- */
+
+.about-content .about-banner {
+    position: relative;
+}
+
+.about-content .about-banner img {
+    width: 100%;
+    max-height: 250px; 
+    object-fit: cover;
+}
+
+.about-content .banner-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    max-width: calc(80% - 40px); 
+    height: auto;
+    z-index: 1;
+}
+
+.about-content .banner-text h2 {
+    font-size: 24px; 
+}
+
+.about-content .text-section {
+    margin-bottom: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about-content .text-section h3 {
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+
+.about-content .text-section p {
+    margin-bottom: 10px;
+}
+
+.about-content .text-section ul {
+    margin-bottom: 10px;
+}
+
+.about-content .text-section ul li {
+    margin-bottom: 5px;
+}
+
+.about-content .text-section ul li strong {
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* New styles for the gallery page */
+
+.gallery {
+    padding: 20px;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Evenly distribute images in the row */
+    margin: 0 auto; /* Center the gallery horizontally */
+}
+
+.image-card {
+    margin: 5px; /* Reduce margin for better spacing on smaller screens */
+    overflow: hidden; /* Prevent image overflow */
+    position: relative; /* Enable image hover effects */
+    width: 300px; /* Fixed width for the image card */
+    height: 200px; /* Fixed height for the image card */
+}
+
+.image-card img {
+    width: 100%; /* Images take full width of the card */
+    height: 100%; /* Images take full height of the card */
+    object-fit: cover; /* Maintain image aspect ratio and cover the card */
+    transition: transform 0.3s ease-in-out; /* Add smooth hover effect transition */
+}
+
+.image-card:hover img {
+    transform: scale(1.1); /* Increase image size slightly on hover */
+}
+
+.image-card figcaption {
+    position: absolute; /* Position caption inside the card */
+    bottom: 0; /* Place caption at the bottom */
+    left: 0; /* Align caption to the left */
+    width: 100%; /* Caption takes full width of the card */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white; /* White text for better readability */
+    padding: 10px; /* Add padding to the caption */
+    text-align: center; /* Center caption text */
+    font-size: 16px;
+    opacity: 0; /* Hide caption initially */
+    transition: opacity 0.3s ease-in-out; /* Add smooth fadeIn effect on hover */
+}
+
+.image-card:hover figcaption {
+    opacity: 1; /* Display caption on hover */
+}
+
+/* Media Queries for Additional Adjustments on Smaller Screens (Optional) */
+
+@media only screen and (max-width: 768px) {
+    /* Adjust number of images per row on smaller screens */
+    .image-card {
+        margin: 1rem; /* Reduce margin further for tighter spacing */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .image-gallery {
+        justify-content: center; /* Center images on smaller screens */
+    }
+}
+
+
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Center the content horizontally */
+    max-width: 100%;
+
+}
+
+.holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 40px;
+}
+
+.activity {
+    width: 40%; 
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+
+/* .activity-image, */
+.activity-info {
+    width: 100%; /* Take up full width */
+    margin: 1rem;
+}
+
+.activity-image img{
+/* .activity-info { */
+    overflow: hidden;
+    width: 50%;
+    height: 18.75rem;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/* Apply hover effect */
+.activity:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .holder {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .activity {
+        width: 100%; /* Take up full width on smaller screens */
+    }
+}
+

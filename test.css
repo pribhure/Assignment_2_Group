@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #32CD32;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hide the navigation bar */
+    width: 250px;
+    height: 100%;
+    padding-top: 60px; /* Adjust as needed */
+    transition: left 0.3s ease;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #8BC34A;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  /* Show the navigation when checkbox is checked */
+  .nav-toggle:checked ~ nav {
+    left: 0;
+  }
+  
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Adjust according to the width of the nav */
+    padding: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  
